@@ -3,3 +3,19 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+body {
+  background-color: var(--yellow);
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: var(--green);
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: var(--blue);
+  }
+}
