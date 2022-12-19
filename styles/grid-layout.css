@@ -43,7 +43,6 @@ body {
   background: SandyBrown;
 }
 
-
 /* 공통 레이아웃 */
 .container {
   border: 5px solid black;
@@ -73,13 +72,10 @@ body {
 @media (max-width: 768px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .group2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-template-areas:
+      "box1 box2"
+      "box1 box3"
+      "box4 box5";
   }
 }
 
@@ -87,5 +83,9 @@ body {
 @media (min-width: 769px) {
   .container {
     grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+      "box1 box1 box1 box1 box5 box5 box5 box5 box5 box4 box4 box4"
+      "box1 box1 box1 box1 . box3 box3 box3 box3 box3 box3 box3";
   }
 }
