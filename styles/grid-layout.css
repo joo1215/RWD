@@ -6,11 +6,6 @@ body {
   margin: 0;
 }
 
-.container {
-  background: silver;
-  border: 1px solid red;
-}
-
 .group1 {
   background: gold;
 }
