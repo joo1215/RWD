@@ -122,6 +122,18 @@ input[type="search"] {
 .spriteBook{
   background-position: 0 0;
 }
+.spriteNews{
+  background-position: 0 -230px;
+}
+.spriteBoard{
+  background-position: 0 -115px;
+}
+.spriteFavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
 
 /* 공통 추천 서적 */
 .book {
