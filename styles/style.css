@@ -104,21 +104,25 @@ input[type="search"] {
   background: lightgreen;
   grid-area: book;
 }
+
 /* 공통 새소식 */
 .news {
   background: yellow;
   grid-area: news;
 }
+
 /* 공통 게시판 */
 .board {
   background: lightsalmon;
   grid-area: board;
 }
+
 /* 공통 인기 사이트 */
 .favorite {
   background: skyblue;
   grid-area: favorite;
 }
+
 /* 공통 트위터 */
 .twitter {
   background: burlywood;
@@ -234,14 +238,14 @@ input[type="search"] {
 
   /* 모바일 메인 콘텐츠 */
   .appMain {
-    max-width: var(--container-width);
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
-      "news news news news news news news news news news news news"
-      "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
-      "book book book book . board board board board board board board";
+      "book"
+      "news"
+      "board"
+      "favorite"
+      "twitter";
   }
 }
 
@@ -298,8 +302,12 @@ input[type="search"] {
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 
-  /* 데스크탑 메인 콘텐츠*/
+  /* 데스크탑 메인 콘텐츠 */
   .appMain {
+    width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid red;
   }
 }
 
