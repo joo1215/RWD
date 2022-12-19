@@ -101,17 +101,19 @@ input[type="search"] {
 
 /* 공통 메인 콘텐츠 섹션 제목 */
 [class*="__title"]{
-  background-color: gold;
-  font-size: 1.125rem;
+  margin-bottom: var(--spacing-base);
+}
+
+[class*="__koTitle"]{
+  font-size: var(--text-md);
   font-weight: 700;
 }
 
-[class*="__enTitle"]{
-  font-size: 1rem;
-  font-weight: 400;
+.sprite{
+  color: white;
+  background: blue;
+  height: 3.75rem;
 }
-
-
 
 /* 공통 추천 서적 */
 .book {
