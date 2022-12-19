@@ -102,7 +102,7 @@ input[type="search"] {
 /* 공통 추천 서적 */
 .book {
   background: lightgreen;
-  grid-area: news;
+  grid-area: book;
 }
 /* 공통 새소식 */
 .news {
@@ -117,10 +117,12 @@ input[type="search"] {
 /* 공통 인기 사이트 */
 .favorite {
   background: skyblue;
+  grid-area: favorite;
 }
 /* 공통 트위터 */
 .twitter {
   background: burlywood;
+  grid-area: twitter;
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -240,10 +242,6 @@ input[type="search"] {
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
-  }
-}
-
-
   }
 }
 
