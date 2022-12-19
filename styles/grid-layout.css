@@ -77,6 +77,10 @@ body {
       "box1 box3"
       "box4 box5";
   }
+  .group1 {
+    position: relative;
+    left: -50px;
+  }
 }
 
 /* 데스크탑 레이아웃 */
