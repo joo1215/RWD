@@ -213,10 +213,8 @@ input[type="search"] {
   display: flex;
   flex-flow: row wrap;
 }
-
 .board__title{
   flex: 1 1 auto;
-  
 }
 .board__list{
   order: 1;
@@ -229,8 +227,6 @@ input[type="search"] {
   display: flex;
   flex-flow: row nowrap;
 }
-
-
 .board__link{
   flex: 0 1 auto;
   /* white-space: nowrap; */
