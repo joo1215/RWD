@@ -230,6 +230,7 @@ input[type="search"] {
 .board__item{
   display: flex;
   flex-flow: row nowrap;
+  background-color: pink;
 }
 
 .board__link{
@@ -244,6 +245,7 @@ input[type="search"] {
   flex: 0 0 auto;
   width: 6.25em;
   text-align: right;
+  background-color: skyblue;
 }
 
 .board__more{
