@@ -230,7 +230,6 @@ input[type="search"] {
 .board__item{
   display: flex;
   flex-flow: row nowrap;
-  background-color: pink;
 }
 
 .board__link{
@@ -245,7 +244,6 @@ input[type="search"] {
   flex: 0 0 auto;
   width: 6.25em;
   text-align: right;
-  background-color: skyblue;
 }
 
 .board__more{
@@ -382,6 +380,18 @@ input[type="search"] {
       "board"
       "favorite"
       "twitter";
+  }
+
+  /* 모바일 인기 사이트 */
+  .favorite__item{
+    margin-top: var(--spacing-sm);
+  }
+
+  .favorite__link::after{
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+    margin-left: var(--spacing-xs);
   }
 }
 
