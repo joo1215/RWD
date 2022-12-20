@@ -197,7 +197,6 @@ input[type="search"] {
 
 /* 공통 새소식 */
 .news {
-  /* background: yellow; */
   grid-area: news;
 }
 
@@ -209,9 +208,43 @@ input[type="search"] {
 
 /* 공통 게시판 */
 .board {
-  /* background: lightsalmon; */
   grid-area: board;
+  display: flex;
+  flex-flow: row wrap;
 }
+
+.board__title{
+  flex: 1 1 auto;
+  
+}
+.board__list{
+  order: 1;
+  flex:1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-sm);
+}
+.board__item{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
+.board__link{
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.board__date{
+  flex: 0 0 auto;
+
+}
+.board__more{
+  padding-top: var(--spacing-sm);
+}
+
 
 /* 공통 인기 사이트 */
 .favorite {
@@ -400,7 +433,6 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
-    border: 5px solid red;
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
